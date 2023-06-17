@@ -1,0 +1,121 @@
+@import '_variables';
+@import '_functions';
+
+header{
+    @include header($colorBottom);
+}
+
+header h1{
+    font-weight: 200;
+    font-size: 40px;
+}
+
+// selection-banner
+.section-1{
+    background-image: url(../img/fundo-yellow);
+    width: 100%;
+    height: 40vh;
+    
+    .text-banner{
+        display: flex;
+        justify-content:center;
+        padding-top: 105px;
+    }
+
+    .name h1{
+        color: rgb(0, 0, 0);
+        font-family: fantasy;
+        font-size: 120px;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    .name p{
+        @include texts($colorTexts);
+
+        font-size: 25px;
+        font-weight: 100;
+        // font-size: x-large;
+    }
+
+    .name a{
+        color: black;
+    }
+
+    .images img:hover{
+        filter: none;
+        transform: scale(1.30);
+        -ms-transform: scale(1.30);
+        -webkit-transform: scale(1.30);
+    }
+
+    .images img{
+        object-fit: cover;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+}
+
+.section-2 h1{
+    @include texts($colorTextsTitle);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.section-2 p{
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.section-3 h1{
+    @include texts($colorTextsTitle);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.section-3{
+    display: flex;
+    justify-content: center;
+    font-weight: 9;
+    font-size: 30px;
+
+    .images img:hover{
+        filter: none;
+        transform: scale(1.30);
+        -ms-transform: scale(1.30);
+        -webkit-transform: scale(1.30);
+    }
+
+    .images img{
+        object-fit: cover;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+}
+
+.section-4 h1{
+    @include texts($colorTextsTitle);
+    padding: 10px;
+}
+
+.section-4 p{
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.section-5{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+
+    .button{
+        font-family: fantasy;
+        color: $colorTexts;
+        background-color: $colorTextsTitle;
+        font-weight: 10;
+        font-size: 30px;
+    }
+
+}
